@@ -39,6 +39,13 @@ def build_faiss_index():
 
     # 1) Cargar embeddings
     embeddings = np.load(EMBEDDINGS_FILE)
+    print(f"DEBUG → embeddings.shape antes de chequear dimensiones: {embeddings.shape}")
+
+    # Si embeddings es 1D (por ejemplo (D,)), lo convertimos a (1, D)
+    if embeddings.ndim == 1:
+        embeddings = embeddings[np.newaxis, :]
+        print(f"DEBUG → embeddings.shape corregido a 2D: {embeddings.shape}")
+
     num_vectors, dim = embeddings.shape
     print(f"⚙️  Construyendo índice FAISS con {num_vectors} vectores de dimensión {dim}...")
 
@@ -46,7 +53,7 @@ def build_faiss_index():
     index = faiss.IndexFlatL2(dim)
 
     # 3) Agregar vectores
-    index.add(embeddings)
+    index.add(embeddings.astype(np.float32))
     print(f"✅ Índice entrenado y poblado (ntotal = {index.ntotal}).")
 
     # 4) Guardar el índice
