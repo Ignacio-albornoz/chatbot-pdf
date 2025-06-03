@@ -57,10 +57,4 @@ jobs:
       - name: Verificar artefactos
         run: |
           ls index/
-        # Opcional: adjuntar index/ como artefacto descargable
-      - name: Publicar índice como artefacto
-        uses: actions/upload-artifact@v2
-        with:
-          name: indice-chatbot
-          path: index/
 
