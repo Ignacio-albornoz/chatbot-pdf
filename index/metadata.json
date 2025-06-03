@@ -1,0 +1,181 @@
+[
+  {
+    "source_file": "DT037 - Manual de Despliegues en Jenkins.pdf",
+    "block_index": 0,
+    "title": "Objetivo del Manual",
+    "tags": [
+      "despliegues",
+      "Jenkins",
+      "Git Flow"
+    ],
+    "roles": [
+      "system"
+    ],
+    "content_preview": "Brindar una guía práctica y clara para el uso del Jenkins de Despliegue de BBVA, asegurando que los equipos de desarrollo puedan ejecutar sus despliegues siguiendo buenas prácticas y bajo el marco del"
+  },
+  {
+    "source_file": "DT037 - Manual de Despliegues en Jenkins.pdf",
+    "block_index": 1,
+    "title": "Acceso claro y controlado",
+    "tags": [
+      "despliegues",
+      "Jenkins",
+      "control de acceso"
+    ],
+    "roles": [
+      "system"
+    ],
+    "content_preview": "Este manual describe paso a paso el proceso para ejecutar despliegues en diferentes entornos, según la rama seleccionada."
+  },
+  {
+    "source_file": "DT037 - Manual de Despliegues en Jenkins.pdf",
+    "block_index": 2,
+    "title": "Gestión de Peticiones",
+    "tags": [
+      "despliegues",
+      "Jenkins",
+      "Helix"
+    ],
+    "roles": [
+      "system"
+    ],
+    "content_preview": "Se detalla el procedimiento para enviar correctamente la información a Helix, incluyendo cómo copiar el link de ejecución desde el Console Output y completar los campos necesarios."
+  },
+  {
+    "source_file": "DT037 - Manual de Despliegues en Jenkins.pdf",
+    "block_index": 3,
+    "title": "Descripción general",
+    "tags": [
+      "despliegues",
+      "Jenkins",
+      "System"
+    ],
+    "roles": [
+      "system"
+    ],
+    "content_preview": "Este manual tiene como objetivo guiar a los equipos de System en el uso del Jenkins de Despliegue, una herramienta diseñada para facilitar el paso a entornos de desarrollo, integración y producción de"
+  },
+  {
+    "source_file": "DT037 - Manual de Despliegues en Jenkins.pdf",
+    "block_index": 4,
+    "title": "Reglas de Despliegue (Git Flow)",
+    "tags": [
+      "despliegues",
+      "Jenkins",
+      "Git Flow"
+    ],
+    "roles": [
+      "system"
+    ],
+    "content_preview": "Los entornos permitidos para desplegar dependen de la rama seleccionada. Jenkins restringe automáticamente los posibles destinos según la rama elegida."
+  },
+  {
+    "source_file": "DT037 - Manual de Despliegues en Jenkins.pdf",
+    "block_index": 5,
+    "title": "Acceso al Pipeline",
+    "tags": [
+      "despliegues",
+      "Jenkins",
+      "Pipeline"
+    ],
+    "roles": [
+      "system"
+    ],
+    "content_preview": "Ingresar a Jenkins desde: https://jenkins.arg.igrupobbva. Buscar el job correspondiente al proyecto. El nombre sigue el formato: UUAA0000_NOMBRE"
+  },
+  {
+    "source_file": "DT037 - Manual de Despliegues en Jenkins.pdf",
+    "block_index": 6,
+    "title": "Selección de Aplicación",
+    "tags": [
+      "aplicación",
+      "despliegue"
+    ],
+    "roles": [
+      "system"
+    ],
+    "content_preview": "3. Seleccionar la aplicación que se desea desplegar"
+  },
+  {
+    "source_file": "DT037 - Manual de Despliegues en Jenkins.pdf",
+    "block_index": 7,
+    "title": "Paso a Paso para Ejecutar un Despliegue",
+    "tags": [
+      "despliegue",
+      "ejecución"
+    ],
+    "roles": [
+      "system"
+    ],
+    "content_preview": "1.4.​Paso a Paso para Ejecutar un Despliegue\nEntorno destino​\nRamas habilitadas​\nLink al documento\nDesarrollo\nFeature, Develop, Release, Master\n▰​ MT 037.1 – Despliegue en Desarrollo​\n📄 Ver documento\n"
+  },
+  {
+    "source_file": "DT037 - Manual de Despliegues en Jenkins.pdf",
+    "block_index": 8,
+    "title": "Selección de Rama",
+    "tags": [
+      "rama",
+      "pipeline"
+    ],
+    "roles": [
+      "system"
+    ],
+    "content_preview": "5. Selección de Rama\nDentro de la carpeta 1 - Systems, se encuentran los pipelines organizados por rama"
+  },
+  {
+    "source_file": "DT037 - Manual de Despliegues en Jenkins.pdf",
+    "block_index": 9,
+    "title": "Gestión de rollback en producción",
+    "tags": [
+      "rollback",
+      "producción"
+    ],
+    "roles": [
+      "system"
+    ],
+    "content_preview": "Gestión de rollback en producción\nCaso​\nDescripción\nLink al documento\n🅰️\nAplicación sin despliegues previos en el nuevo Jenkins\n▰​ 📄 Ver documento\n🅱️\nAplicación con despliegues exitosos en el nuevo Je"
+  },
+  {
+    "source_file": "DT037 - Manual de Despliegues en Jenkins.pdf",
+    "block_index": 10,
+    "title": "Versionado",
+    "tags": [
+      "versionado",
+      "changelog"
+    ],
+    "roles": [
+      "system"
+    ],
+    "content_preview": "Versionado\nFecha\nAutor\nVersión\nChangelog\n24/04/2025\nIgnacio Albornoz\n1.0.0\nInstructivo"
+  },
+  {
+    "source_file": "MT037.1 - Despliegue en Desarrollo – Jenkins No Host.pdf",
+    "block_index": 0,
+    "title": "Despliegue en Desarrollo",
+    "tags": [
+      "Despliegue",
+      "Desarrollo",
+      "Jenkins"
+    ],
+    "roles": [
+      "system",
+      "gcei"
+    ],
+    "content_preview": "DevOps Argentina Buenos Aires, Abril 2025"
+  },
+  {
+    "source_file": "MT037.1 - Despliegue en Desarrollo – Jenkins No Host.pdf",
+    "block_index": 1,
+    "title": "Despliegue en Integración",
+    "tags": [
+      "Despliegue",
+      "Integración",
+      "Jenkins"
+    ],
+    "roles": [
+      "system",
+      "gcei"
+    ],
+    "content_preview": "1. 🔄 Desarrollo Navegá a la rama deseada: feature, develop, release o master. Presioná el botón \"Build with Parameters\" (arriba a la izquierda). Seleccioná el artefacto desde el listado Elegí el entor"
+  }
+]
