@@ -42,9 +42,12 @@ jobs:
         run: |
           python src/pdf_loader.py
 
-      - name: Estructurar JSON vía ChatGPT
-        run: |
-          python src/gpt_structurer.py
+      - name: Estructurar JSON rule-based
+        run: python src/rule_structurer.py
+
+      #- name: Estructurar JSON vía ChatGPT
+      #  run: |
+      #    python src/gpt_structurer.py
 
       - name: Generar embeddings
         run: |
