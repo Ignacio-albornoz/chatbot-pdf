@@ -57,7 +57,7 @@ jobs:
         run: python src/indexer.py build
 
       - name: Empaquetar carpeta index/ como artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: chatbot-index   # nombre con el que lo veremos en GitHub
           path: index/         # subcarpeta que contiene index.faiss, embeddings.npy, metadata.json
