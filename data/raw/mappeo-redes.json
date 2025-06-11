@@ -1,0 +1,190 @@
+[
+  {
+    "sitio": "Rec",
+    "zonas": [
+      {
+        "nombre": "Publishing Zone Rec",
+        "rango_ip": "76.254.1.0 - 76.254.255.255",
+        "equipos": [
+          "FwInternoRec Sv_Intermedio"
+        ],
+        "conexiones": [
+          {
+            "hacia": "Core Banking Zone Rec",
+            "mediador": "FwInternoRec Sv_Intermedio"
+          },
+          {
+            "hacia": "Publishing Zone Ven",
+            "mediador": "WAN Link"
+          }
+        ]
+      },
+      {
+        "nombre": "Core Banking Zone Rec",
+        "rango_ip": "76.254.0.0 - 76.254.127.255",
+        "equipos": [
+          "FwLanRec"
+        ],
+        "conexiones": [
+          {
+            "hacia": "SuperCore Rec",
+            "mediador": "FwLanRec"
+          },
+          {
+            "hacia": "Core Banking Zone Ven",
+            "mediador": "WAN Link"
+          }
+        ]
+      },
+      {
+        "nombre": "SuperCore Rec",
+        "equipos": [
+          "Router SuperCore Rec"
+        ],
+        "conexiones": [
+          {
+            "hacia": "DMZ Perímetro Rec",
+            "mediador": "Ethernet"
+          },
+          {
+            "hacia": "Legacy Rec",
+            "mediador": "Ethernet"
+          },
+          {
+            "hacia": "SuperCore Ven",
+            "mediador": "WAN Link"
+          },
+          {
+            "hacia": "Resto de Edif Centrales, Sucursales",
+            "mediador": "WAN Link"
+          }
+        ]
+      },
+      {
+        "nombre": "DMZ Perímetro Rec",
+        "subredes": [
+          "45.239.212.x",
+          "200.5.92.x",
+          "172.x.x.x",
+          "10.x.x.x"
+        ],
+        "equipos": [
+          "FwInternmedia / FwInternetRec"
+        ],
+        "conexiones": [
+          {
+            "hacia": "SuperCore Rec",
+            "mediador": "FwInternmedia / FwInternetRec"
+          }
+        ]
+      },
+      {
+        "nombre": "Legacy Rec",
+        "subredes": [
+          "76.252.x.x",
+          "76.258.x.x"
+        ],
+        "conexiones": [
+          {
+            "hacia": "SuperCore Rec",
+            "mediador": "Ethernet"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sitio": "Ven",
+    "zonas": [
+      {
+        "nombre": "Publishing Zone Ven",
+        "rango_ip": "76.239.1.0 - 76.239.255.255",
+        "equipos": [
+          "FwIntraVen Sv_Intermedio"
+        ],
+        "conexiones": [
+          {
+            "hacia": "Core Banking Zone Ven",
+            "mediador": "FwIntraVen Sv_Intermedio"
+          },
+          {
+            "hacia": "Publishing Zone Rec",
+            "mediador": "WAN Link"
+          }
+        ]
+      },
+      {
+        "nombre": "Core Banking Zone Ven",
+        "rango_ip": "76.239.0.0 - 76.239.127.255",
+        "equipos": [
+          "FwLanVen"
+        ],
+        "conexiones": [
+          {
+            "hacia": "SuperCore Ven",
+            "mediador": "FwLanVen"
+          },
+          {
+            "hacia": "Core Banking Zone Rec",
+            "mediador": "WAN Link"
+          }
+        ]
+      },
+      {
+        "nombre": "SuperCore Ven",
+        "equipos": [
+          "Router SuperCore Ven"
+        ],
+        "conexiones": [
+          {
+            "hacia": "DMZ Perímetro Ven",
+            "mediador": "Ethernet"
+          },
+          {
+            "hacia": "Legacy Ven",
+            "mediador": "Ethernet"
+          },
+          {
+            "hacia": "SuperCore Rec",
+            "mediador": "WAN Link"
+          },
+          {
+            "hacia": "Resto de Edif Centrales, Sucursales",
+            "mediador": "WAN Link"
+          }
+        ]
+      },
+      {
+        "nombre": "DMZ Perímetro Ven",
+        "subredes": [
+          "45.239.212.x",
+          "200.5.92.x",
+          "172.x.x.x",
+          "10.x.x.x"
+        ],
+        "equipos": [
+          "FwInternmedia / FwInternetVen"
+        ],
+        "conexiones": [
+          {
+            "hacia": "SuperCore Ven",
+            "mediador": "FwInternmedia / FwInternetVen"
+          }
+        ]
+      },
+      {
+        "nombre": "Legacy Ven",
+        "subredes": [
+          "76.249.x.x",
+          "76.249.x.x"
+        ],
+        "conexiones": [
+          {
+            "hacia": "SuperCore Ven",
+            "mediador": "Ethernet"
+          }
+        ]
+      }
+    ]
+  }
+]
